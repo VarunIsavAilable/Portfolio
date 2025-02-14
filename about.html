@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>About</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* base rule */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Poppsin", sans-serif;
+
+}
+
+p, li, a{
+    font-family: "Urbanist", sans-serif;
+    font-size: 1.8rem;
+    /* letter-spacing: .8rem; */
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 400;
+    /* 400 is regular */
+
+    color: var(--para-color);
+}
+
+li{
+    list-style: none;
+}
+
+/* theme */
+
+:root{
+    --main-color: #0062ff;
+    --supporting-color: #ebf3fe;
+    --font-color: #424242;
+    --bg-color: #ffffff;
+    --heading-color: #000a19;
+    --h-color: #0a043c;
+    --white-color:#fff;
+    --test: #070101;
+    --para-color: #504e4d;
+    --btnhover-bg-color: #003b99;
+    --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container{
+    max-width: 100rem;
+    /* 1420px */
+    margin: 0 auto;
+    margin-top: -3rem;
+    padding: 9.6rem 2.4rem;
+}
+
+
+.grid{
+    display: grid;
+}
+
+.grid-htree--cols{
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -11rem;
+}
+
+.about-div p::selection{
+    background-color: pink;
+}
+
+.about-div h3::selection{
+    background-color: pink;
+}
+
+.section-common--title{
+    font-size: 2rem;
+    margin: 2.4rem 0 1.2rem 0;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1.2rem 3.2rem;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border-radius: 0.6rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
+}
+
+
+.section-common-heading{
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.section-common-subheading{
+    color: var(--heading-color);
+}
+
+.section-about img{
+    transition: all .3s linear ;
+    -webkit-transition: all .3s linear ;
+    -moz-transition: all .3s linear ;
+    -ms-transition: all .3s linear ;
+    -o-transition: all .3s linear ;
+}
+
+.about-div{
+    padding: 2.4rem;
+}
+
+.about-div .icon:hover > img{
+    rotate: 360deg;
+    background: linear-gradient(to right, #0575e6, #021b79);
+}
+
+.about-info{
+    height: 25rem;
+}
+
+.about-info:hover{
+    border-radius: 30px;
+    box-shadow: 0 0 20px .09px rgb(201, 167, 173);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+.fa-solid{
+    padding: 2.4rem;
+    background-color: var(--supporting-color);
+    font-size: 2.4rem;
+    border-radius: 40%;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    -ms-border-radius: 40%;
+    -o-border-radius: 40%;
+    color: var(--heading-color);
+}
+
+.section-about {
+    margin-top: 10rem;
+    background-color: #ECDFCC;
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+}
+
+.section-about .about-div{
+    text-align: center;
+}
+
+
+
+.section-about img{
+    padding: 2.4rem;
+    background-color: var(--supporting-color);
+    width: 10rem;
+    height: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.section-navbar .container .navbar-brand a img{
+    width: 20rem;
+    padding-top: .9rem;
+    display: inline-block;
+    color: #ECDFCC;
+}
+
+
+
+.section-navbar{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 24px 0px, rgba(0, 0, 0, 0.8) 0px 0px 0px 1px;
+}
+
+.section-navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 0;
+
+    
+}
+
+.section-navbar .navbar ul{
+    display: flex;
+    gap: 3.2rem;
+    text-transform: capitalize;
+
+
+    & li a{
+        color: var(--heading-color);
+        text-transform: uppercase;
+        font-weight: 600px;
+        font-size: 1.6rem;
+        display: inline-block;
+        position: relative;
+
+        
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: -0.3rem;
+            left: 0;
+            width: 0%;
+            border-bottom: .2rem solid var(--main-color);
+            transition: all 0.3s linear;
+            -webkit-transition: all 0.3s linear;
+            -moz-transition: all 0.3s linear;
+            -ms-transition: all 0.3s linear;
+            -o-transition: all 0.3s linear;
+}
+    }
+
+    & li a:hover::after{
+        width: 100%;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- start navbar section -->
+     <header class="section-navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="Screenshot 2024-10-31 123253.png" alt="Varun's logo">
+                </a>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li class="nav-item"> <a class="nav-link" href="index.html.html">Home</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="project.html">Projects</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="profile.html">Profile</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+     </header>
+
+     <section class="section-about">
+        
+        <div class="container">
+            <h2 class="section-common-heading">About me</h2>
+            <p class="section-common-subheading">A Brief about me</p>
+        </div>
+
+        <div class="container grid grid-htree--cols">
+            <div class="about-div">
+                <div class="icon">
+                    <img src="Coding.png" alt="Languages">
+                </div>
+                <div class="about-info">
+                    <h3 class="section-common--title">Languages</h3>
+                    <p>I'm proficient at Python, C++, Java, C & SQL</p>
+                </div>
+            </div>
+
+            <div class="about-div">
+                <div class="icon">
+                    <img src="css.png" alt="Specialization">
+                </div>
+
+                <div class="about-info">
+                    <h3 class="section-common--title">Specialization</h3>
+                    <p>I have specialized in ML, DL, NLP & Reinforcement Learning</p>
+                </div>
+            </div>
+
+            <div class="about-div">
+                <div class="icon">
+                    <img src="dev.png" alt="development">
+                </div>
+                <div class="about-info">
+                    <h3 class="section-common--title">Development</h3>
+                    <p>I'm experienced in Web Development and proficient at HTML, CSS, JavaScript, Django, React.js, Node.js, Mongodb, Express.js</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

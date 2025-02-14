@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+
+     
+
+
+        .main{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .location{
+            width: 28rem;
+            height:auto;
+            margin-top: 9rem;
+            /* margin-left: 2rem; */
+            margin-right: 4rem;
+
+
+            & iframe{
+                border-radius: 40px 100px 5px 100px;
+            }
+        }
+
+        .container{
+            width: 28rem;
+            height:auto;
+            margin-top: 9rem;
+            margin-left: 4rem;
+
+        }
+
+        .name{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        textarea{
+            width: 24.4rem;
+            height: 6rem;
+        }
+
+        button{
+            width: 6rem;
+            height: 2rem;
+            border-radius: 10px;
+            background-color: #88deff;
+
+            &:hover{
+                background-color: cadetblue;
+            }
+        }
+
+
+
+        .section-navbar .container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* gap: 2rem; */
+
+            width: 85%;
+            /* height: auto; */
+        }
+
+        .section-navbar .container .navbar ul li a{
+            text-decoration: none;
+        }
+
+        .section-navbar .container .navbar ul li{
+            list-style: none;
+            display: inline;
+            & a{
+                display: inline-block;
+            }
+
+            padding-left: 2rem;
+        }
+        .section-navbar .container .navbar-brand a img{
+            width: 15rem;
+            padding-top: .9rem;
+            display: inline-block;
+            color: #ECDFCC;
+            margin-top: -2rem;
+            margin: 0 0 0 12rem;
+        }
+
+        .section-navbar{
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 24px 0px, rgba(0, 0, 0, 0.8) 0px 0px 0px 1px;
+            margin-top: -9rem;
+            height: 9rem;
+            padding-top: -2rem;    
+        }
+
+        .section-navbar .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.8rem 0;
+        }
+
+        .section-navbar .container .navbar{
+            width: 36rem;
+        }
+
+        input:focus-visible{
+            outline: .1rem solid pink;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- start navbar section -->
+    <header class="section-navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="Screenshot 2024-10-31 123253.png" alt="Varun's logo">
+                </a>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li class="nav-item"> <a class="nav-link" href="index.html.html">Home</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="about.html" >About</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="project.html">Projects</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="profile.html">Profile</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+     </header>
+
+     <main>
+
+        <div class="main">
+
+            <form action="https://formspree.io/f/mjkvwykb"
+                method="POST">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Please fill this form in a descent manner</p>
+
+
+                <br>
+                <br>
+                <hr>
+                <br>
+                <br>
+
+
+                <h3>Full Name</h3>
+
+                
+                <div class="name">
+                    <div class="fname">
+                            <input type="text" required name="text">
+                            <p>First Name</p>
+                    </div>
+
+
+
+
+                    <div class="lname">
+                        
+                            <input type="text" required name="text">
+                            <p>Last Name</p>
+                       
+                    </div>
+                </div>
+
+
+                <br>
+
+                <div class="mail">
+                    <h3>E-mail</h3>
+                        <input type="email" required name="email">
+                        <p>example@example.com</p>
+                </div>
+
+                <br>
+
+                <div class="message">
+                    <h3>Message</h3>
+                    <textarea name="messages" id="messages"></textarea>
+                </div>
+                <br>
+                <button name="Submit">Submit</button>
+
+            </div>
+        </form>
+
+            <div class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3635.610399496667!2d76.9147213!3d24.325221199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397b1e06faee9505%3A0x4bfab8af553ac0ab!2sSamra%20Electricians!5e0!3m2!1sen!2sin!4v1730785509276!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
